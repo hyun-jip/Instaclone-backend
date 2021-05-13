@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node server"
+    "dev": "nodemon --exec babel-node server",
+    "migrate": "npx prisma migrate dev"
   },
   "repository": {
     "type": "git",
