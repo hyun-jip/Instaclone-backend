@@ -4,10 +4,12 @@ import { protectResolver } from "../users.utils";
 
 const resolverFn = async (
   _,
-  { firstName, lastName, username, email, password: newPassword },
+  { firstName, lastName, username, email, password: newPassword, bio, avatar },
   { loggedInUser }
 ) => {
-  console.log(loggedInUser);
+  const { filename, createReadStream } = await avatar;
+  const stream = createReadStream();
+  console.log(stream);
   let uglyPassword = null;
   if (newPassword) {
     uglyPassword = await bcrypt.hash(newPassword, 10);
@@ -21,6 +23,7 @@ const resolverFn = async (
       lastName,
       username,
       email,
+      bio,
       ...(newPassword && { password: uglyPassword }),
     },
   });
