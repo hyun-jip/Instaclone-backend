@@ -13,19 +13,19 @@ Instaclone Backend.
 - [x] Unfollow User
 - [x] See Followers w/ Pagination
 - [x] See Following w/ Pagination
-- [ ] Computed Fields
-- [ ] Search Users
+- [x] Computed Fields
+- [x] Search Users
 
 ## Photos
 
-- [ ] See Photo
-- [ ] Upload Photo
+- [x] See Photo
+- [x] Upload Photo
+- [ ] See Hashtag
 - [ ] Edit Photo
 - [ ] Like / Unlike Photo
 - [ ] See Photo Likes
 - [ ] See Feed
 - [ ] Search Photos
-- [ ] See Hashtags
 
 ## Comments
 
